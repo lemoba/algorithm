@@ -9,5 +9,9 @@ func main() {
 	list.InsertAtHead(2)
 	list.InsertAtHead(3)
 
+	list.InsertAtTail(4)
+	list.InsertAtTail(5)
+	list.InsertAtTail(6)
+
 	list.Print()
 }

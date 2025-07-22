@@ -135,13 +135,8 @@ func (l *SinglyLinkedList) RemoveFirstAtValue(value int) bool {
 
 // Print 打印链表
 func (l *SinglyLinkedList) Print() {
-	curr := l.head
-
-	for curr != nil {
+	for curr := l.head; curr != nil; curr = curr.Next {
 		fmt.Printf("%d->", curr.Value)
-
-		curr = curr.Next
 	}
-
 	fmt.Println("nil")
 }
